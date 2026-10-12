@@ -1,0 +1,108 @@
+{
+ "label": "retry",
+ "samples": 2,
+ "summary": {
+  "overall": {
+   "samples": 2,
+   "intent": 1.0,
+   "trajectory": 1.0,
+   "outcome": 1.0,
+   "passed": 1.0,
+   "avg_seconds": 10.38,
+   "avg_cost": 0.00757,
+   "avg_worker_calls": 4,
+   "avg_worker_input": 8046,
+   "avg_worker_output": 384,
+   "cache_hit": 0.756
+  },
+  "complex": {
+   "samples": 2,
+   "intent": 1.0,
+   "trajectory": 1.0,
+   "outcome": 1.0,
+   "passed": 1.0,
+   "avg_seconds": 10.38,
+   "avg_cost": 0.00757,
+   "avg_worker_calls": 4,
+   "avg_worker_input": 8046,
+   "avg_worker_output": 384,
+   "cache_hit": 0.756
+  }
+ },
+ "results": [
+  {
+   "id": "c1",
+   "intent": "complex",
+   "predicted": "complex",
+   "intents": [
+    "complex"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "search_policy",
+    "search_policy",
+    "search_policy",
+    "search_policy",
+    "submit_trip_request"
+   ],
+   "steps": 3,
+   "seconds": 11.94,
+   "cost": 0.010984,
+   "worker_calls": 4,
+   "worker_input": 9150,
+   "worker_cached": 6016,
+   "worker_output": 520,
+   "answer": "已为你办妥，汇总如下：\n\n出差申请已提交，单号 CC0001，目的地上海，2026-10-21 至 2026-10-22，状态为待审批。\n\n相关标准（依据《差旅与报销管理办法》）：\n住宿：上海属一类城市，每人每晚不超过 500 元，凭发票据实报销，超出部分个人承担；两名同性员工一同出差原则上合住一间。\n交通：火车限高铁或动车二等座；飞机限经济舱，且仅在单程超过 800 公里或乘高铁超过 5 小时时可选；市内交通每人每天 80 元包干，不需票据；出租车和网约车仅在携带大件样品或 22:00 后无公共交通时可报销，并需注明原因。\n出差补贴：伙食补贴每人每天 100 元，按自然天数计算，不需票据；接待方已提供用餐的当天不发。\n报销时限：出差返回后 15 个自然日内提交报销单（表单编号 FN-05），超过 30 个自然日不再受理。\n\n如需补充出差事由或调整日期，告诉我即可。",
+   "question": "我下周三去上海出差两天，帮我安排一下",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "c3",
+   "intent": "complex",
+   "predicted": "complex",
+   "intents": [
+    "complex"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "get_leave_balance",
+    "list_leave_requests",
+    "submit_leave_request"
+   ],
+   "steps": 3,
+   "seconds": 8.82,
+   "cost": 0.00415,
+   "worker_calls": 4,
+   "worker_input": 6943,
+   "worker_cached": 6144,
+   "worker_output": 248,
+   "answer": "你今年年假共 5 天，已用 2 天（QJ0001，2026-07-06 至 07-07，已批准），剩余 3 天。已为你提交年假请假单 QJ0003，日期 2026-10-19 至 2026-10-21，共 3 天，目前状态为待审批。",
+   "question": "查一下我还有几天年假，够的话帮我请下周一到周三",
+   "hits": [],
+   "query": ""
+  }
+ ],
+ "pass_k": {
+  "k": 3,
+  "pass_1": 1.0,
+  "pass_k": 0.0,
+  "unstable": [
+   "c1",
+   "c3"
+  ],
+  "per_run": [
+   1.0,
+   0.5,
+   0.5
+  ]
+ }
+}

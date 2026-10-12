@@ -1,0 +1,24 @@
+{"chunks": ["员工手册#02"], "question": "年假没休完可以留到明年吗", "answer": "可以。确因工作原因没有休完的，剩余天数可以顺延到次年 3 月 31 日，逾期作废。", "label": "faithful"}
+{"chunks": ["员工手册#02"], "question": "年假没休完可以留到明年吗", "answer": "可以，剩余天数可以顺延到次年 6 月 30 日，逾期没休的按日工资折算补偿。", "label": "unfaithful"}
+{"chunks": ["差旅与报销管理办法#03"], "question": "去上海出差住宿一晚能报多少", "answer": "上海属于一类城市，每人每晚不超过 500 元，超出的部分由个人承担。", "label": "faithful"}
+{"chunks": ["差旅与报销管理办法#03"], "question": "去上海出差住宿一晚能报多少", "answer": "上海每人每晚不超过 600 元，凭发票报销。", "label": "unfaithful"}
+{"chunks": ["IT服务指南#01"], "question": "VPN 报错 E-809 是怎么回事", "answer": "E-809 表示当前网络屏蔽了 VPN 的端口，酒店和机场的无线网络比较常见。换一个网络，或者改用手机热点即可。", "label": "faithful"}
+{"chunks": ["IT服务指南#01"], "question": "VPN 报错 E-809 是怎么回事", "answer": "E-809 表示账号被锁定，需要联系信息部人工解锁。", "label": "unfaithful"}
+{"chunks": ["新员工入职指引#02"], "question": "试用期工资怎么算", "answer": "试用期的工资为转正后工资的 90%。", "label": "faithful"}
+{"chunks": ["新员工入职指引#02"], "question": "试用期工资怎么算", "answer": "试用期的工资为转正后工资的 90%，另外每月还有 500 元的餐费补贴。", "label": "unfaithful"}
+{"chunks": ["员工手册#03"], "question": "请两天病假需要什么证明", "answer": "连续 2 天及以上的病假，需要提供二级及以上医院出具的诊断证明或病假条。", "label": "faithful"}
+{"chunks": ["员工手册#03"], "question": "请两天病假需要什么证明", "answer": "需要提供三甲医院的诊断证明，并且由部门主管签字确认。", "label": "unfaithful"}
+{"chunks": ["员工手册#04"], "question": "事假扣工资吗", "answer": "事假期间不发放工资，一个自然年度内累计不得超过 15 天。", "label": "faithful"}
+{"chunks": ["员工手册#04"], "question": "事假扣工资吗", "answer": "事假期间按基本工资的 50% 发放。", "label": "unfaithful"}
+{"chunks": ["新员工入职指引#03"], "question": "HR-07 是什么表", "answer": "HR-07 是转正申请的表单，需要在试用期满前 15 天提交，并附上试用期的工作总结。", "label": "faithful"}
+{"chunks": ["新员工入职指引#03"], "question": "HR-07 是什么表", "answer": "HR-07 是加班申请表，需要在加班之前提交给部门主管。", "label": "unfaithful"}
+{"chunks": ["行政服务指南#01"], "question": "会议室最多能提前几天订", "answer": "最多提前 14 天预订，单次最长 4 小时。", "label": "faithful"}
+{"chunks": ["行政服务指南#01"], "question": "会议室最多能提前几天订", "answer": "最多提前 14 天预订。周末也可以预订，但需要另外向人事行政部申请。", "label": "unfaithful"}
+{"chunks": ["差旅与报销管理办法#05"], "question": "出差回来多久之内要报销", "answer": "出差返回后应当在 15 个自然日之内提交报销单，超过 30 个自然日不再受理。", "label": "faithful"}
+{"chunks": ["差旅与报销管理办法#05"], "question": "出差回来多久之内要报销", "answer": "应当在 15 个工作日之内提交，超过 60 天不再受理。", "label": "unfaithful"}
+{"chunks": ["IT服务指南#03"], "question": "密码多久过期", "answer": "密码每 90 天过期一次，到期前 7 天系统会发邮件提醒。", "label": "faithful"}
+{"chunks": ["IT服务指南#03"], "question": "密码多久过期", "answer": "密码每 90 天过期一次。过期之后账号会被永久停用，需要重新申请开通。", "label": "unfaithful"}
+{"chunks": ["员工手册#02"], "question": "没休完的年假可以折成钱吗", "answer": "不可以。制度规定没有休完的年假逾期作废，不折算工资。", "label": "faithful"}
+{"chunks": ["差旅与报销管理办法#04"], "question": "出差每天补多少钱", "answer": "伙食补贴是每人每天 100 元，按出差的自然天数算，不用交票据；如果当天接待方管饭，这一天就不发。", "label": "faithful"}
+{"chunks": ["差旅与报销管理办法#02"], "question": "出差可以坐飞机吗", "answer": "可以，单程超过 500 公里就可以乘坐飞机的经济舱。", "label": "unfaithful"}
+{"chunks": ["员工手册#05"], "question": "加班怎么换调休", "answer": "加班 1 小时折算 1 小时调休，要在加班之日起 3 个月内用完，过期作废。[1]", "label": "faithful"}

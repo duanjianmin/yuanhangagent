@@ -1,0 +1,79 @@
+{
+ "calibration": {
+  "router": {
+   "model": "deepseek-r1:14b",
+   "cases": 24,
+   "agreement": 1.0,
+   "missed_unfaithful": 0,
+   "false_alarm": 0,
+   "invalid": 0,
+   "avg_seconds": 3.73,
+   "cost": 0.0,
+   "wrong": []
+  },
+  "worker": {
+   "model": "deepseek-chat",
+   "cases": 24,
+   "agreement": 1.0,
+   "missed_unfaithful": 0,
+   "false_alarm": 0,
+   "invalid": 0,
+   "avg_seconds": 1.35,
+   "cost": 0.0163,
+   "wrong": []
+  }
+ },
+ "judge": "deepseek-r1:14b",
+ "answers": [
+  {
+   "id": "k1",
+   "question": "年假没休完可以留到明年吗",
+   "answer": "可以。确因工作原因没有休完的，剩余天数可以顺延到次年 3 月 31 日，逾期作废，不折算工资。[1]",
+   "verdict": "faithful",
+   "raw": "```json\n{\n  \"reason\": \"回答中的信息与资料完全一致，包括年假未休完的处理方式和时间限制。\",\n  \"verdict\": \"faithful\"\n}\n```"
+  },
+  {
+   "id": "k2",
+   "question": "去上海出差住宿一晚能报多少",
+   "answer": "一类城市（北京、上海、广州、深圳）住宿费每人每晚不超过 500 元，在标准之内凭发票据实报销，超出的部分由个人承担。[1]",
+   "verdict": "faithful",
+   "raw": "```json\n{\n  \"reason\": \"回答中的信息与资料完全一致，详细说明了一类城市的住宿费标准，并正确引用了资料。\",\n  \"verdict\": \"faithful\"\n}\n```"
+  },
+  {
+   "id": "k3",
+   "question": "VPN 报错 E-809 是怎么回事",
+   "answer": "E-809 表示当前网络屏蔽了 VPN 的端口，常见于酒店和机场的无线网络。请更换网络，或者改用手机热点。[1]",
+   "verdict": "faithful",
+   "raw": "```json\n{\n  \"reason\": \"回答中的内容与资料完全一致，E-809错误代码的原因和解决方法都正确。\",\n  \"verdict\": \"faithful\"\n}\n```"
+  },
+  {
+   "id": "k4",
+   "question": "试用期工资怎么算",
+   "answer": "试用期工资为转正后工资的 90%。[1]",
+   "verdict": "faithful",
+   "raw": "```json\n{\n  \"reason\": \"回答中的事实与资料一致，试用期工资为转正后工资的90%。\",\n  \"verdict\": \"faithful\"\n}\n```"
+  },
+  {
+   "id": "k5",
+   "question": "请两天病假需要什么证明",
+   "answer": "连续 2 天及以上的病假，需要提供二级及以上医院出具的诊断证明或病假条 [1]。",
+   "verdict": "faithful",
+   "raw": "```json\n{\n  \"reason\": \"回答准确地引用了资料中关于连续病假2天及以上需要二级及以上医院证明的规定。\",\n  \"verdict\": \"faithful\"\n}\n```"
+  },
+  {
+   "id": "k6",
+   "question": "那事假呢，扣工资吗",
+   "answer": "事假期间不发放工资。[1]",
+   "verdict": "faithful",
+   "raw": "```json\n{\n  \"reason\": \"回答中的事实与资料一致，明确指出事假期间不发放工资。\",\n  \"verdict\": \"faithful\"\n}\n```"
+  },
+  {
+   "id": "k7",
+   "question": "HR-07 是什么表",
+   "answer": "HR-07 是转正申请表单。[1]",
+   "verdict": "faithful",
+   "raw": "```json\n{\n  \"reason\": \"回答中的事实与资料一致，HR-07确实是转正申请表单。\",\n  \"verdict\": \"faithful\"\n}\n```"
+  }
+ ],
+ "faithfulness": 1.0
+}

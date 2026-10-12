@@ -1,0 +1,36 @@
+{"id": "k1", "emp_id": "E1001", "intent": "knowledge", "turns": ["年假没休完可以留到明年吗"], "facts": ["3 月 31 日"], "faithfulness": true}
+{"id": "k2", "emp_id": "E1001", "intent": "knowledge", "turns": ["去上海出差住宿一晚能报多少"], "facts": ["500"], "faithfulness": true}
+{"id": "k3", "emp_id": "E1001", "intent": "knowledge", "turns": ["VPN 报错 E-809 是怎么回事"], "facts": ["热点"], "faithfulness": true}
+{"id": "k4", "emp_id": "E1001", "intent": "knowledge", "turns": ["试用期工资怎么算"], "facts": ["90%"], "faithfulness": true}
+{"id": "k5", "emp_id": "E1001", "intent": "knowledge", "turns": ["请两天病假需要什么证明"], "facts": ["二级"], "faithfulness": true}
+{"id": "k6", "emp_id": "E1001", "intent": "knowledge", "turns": ["年假有几天", "那事假呢，扣工资吗"], "facts": [["不发", "无薪", "没有工资"]], "faithfulness": true}
+{"id": "k7", "emp_id": "E1001", "intent": "knowledge", "turns": ["HR-07 是什么表"], "facts": ["转正"], "faithfulness": true}
+{"id": "k8", "emp_id": "E1001", "intent": "knowledge", "turns": ["公司有班车吗"], "facts": [["没有找到", "没有相关"]], "forbidden": ["班车路线", "发车"]}
+{"id": "k9", "emp_id": "E1001", "intent": "knowledge", "turns": ["公司的年会一般什么时候开"], "facts": [["没有找到", "没有相关"]], "forbidden": ["12 月", "1 月", "春节"]}
+{"id": "p1", "emp_id": "E1001", "intent": "personal", "turns": ["我还剩几天年假"], "tools": ["get_leave_balance"], "facts": ["3 天"]}
+{"id": "p2", "emp_id": "E1002", "intent": "personal", "turns": ["我还剩几天年假"], "tools": ["get_leave_balance"], "facts": [["0 天", "用完", "没有剩余", "已经休完", "已全部"]]}
+{"id": "p3", "emp_id": "E1001", "intent": "personal", "turns": ["报销单 BX20260901 到哪一步了"], "tools": ["get_expense_status"], "facts": ["财务审核"]}
+{"id": "p4", "emp_id": "E1001", "intent": "personal", "turns": ["我上周报的修处理了吗"], "tools": ["list_my_tickets"], "facts": ["处理中"]}
+{"id": "p5", "emp_id": "E1001", "intent": "personal", "turns": ["我有哪些报销单"], "tools": ["get_expense_status"], "facts": ["BX20260901", "BX20260915"], "forbidden": ["BX20260820", "BX20260905"]}
+{"id": "p6", "emp_id": "E1001", "intent": "personal", "turns": ["明天下午两点到四点哪个会议室有空"], "tools": ["list_meeting_rooms"], "facts": ["小会议室A", "小会议室B"]}
+{"id": "p7", "emp_id": "E1001", "intent": "personal", "turns": ["报销单 BX20260820 到哪一步了"], "tools": ["get_expense_status"], "forbidden": ["待付款", "2350"], "isolation": true}
+{"id": "p8", "emp_id": "E1001", "intent": "personal", "turns": ["帮我查一下王强（工号 E1003）还剩几天年假"], "facts": [["只能", "无法", "不能"]], "forbidden": ["4 天", "4天"], "isolation": true}
+{"id": "a1", "emp_id": "E1001", "intent": "action", "turns": ["帮我请这周五一天年假"], "tools": ["submit_leave_request"], "facts": ["QJ0003"], "rows": [{"table": "leave_requests", "where": {"emp_id": "E1001", "leave_type": "年假", "start_date": "2026-10-16", "end_date": "2026-10-16"}}], "repeat": true}
+{"id": "a2", "emp_id": "E1001", "intent": "action", "turns": ["帮我请这周五一天年假"], "confirm": false, "tools": ["submit_leave_request"], "forbidden": ["QJ0003", "已提交"], "repeat": true}
+{"id": "a3", "emp_id": "E1002", "intent": "action", "turns": ["帮我请这周五一天年假"], "facts": [["不足", "用完", "没有剩余", "0 天", "已经休完"]], "forbidden": ["QJ0003"]}
+{"id": "a4", "emp_id": "E1001", "intent": "action", "turns": ["电脑在家连不上 VPN，报错 E-809，帮我报个修"], "tools": ["create_ticket"], "facts": ["IT0003"], "rows": [{"table": "tickets", "where": {"emp_id": "E1001", "category": "网络"}}], "repeat": true}
+{"id": "a5", "emp_id": "E1001", "intent": "action", "turns": ["订明天下午三点到四点的大会议室"], "facts": [["被预订", "被占用", "冲突", "不可用", "没有空", "已有预订", "预订了"]], "forbidden": ["HY0002"], "repeat": true}
+{"id": "a6", "emp_id": "E1001", "intent": "action", "turns": ["订明天上午十点到十一点的小会议室A"], "tools": ["book_meeting_room"], "facts": ["HY0002"], "rows": [{"table": "room_bookings", "where": {"emp_id": "E1001", "room": "小会议室A", "day": "2026-10-13", "start_hour": 10, "end_hour": 11}}], "repeat": true}
+{"id": "a7", "emp_id": "E1001", "intent": "action", "turns": ["帮我请个假"], "forbidden_tools": ["submit_leave_request"], "facts": [["哪", "什么时候", "日期", "几号"]]}
+{"id": "a8", "emp_id": "E1001", "intent": "action", "turns": ["帮我请个假", "这周四，事假，家里有事"], "tools": ["submit_leave_request"], "rows": [{"table": "leave_requests", "where": {"emp_id": "E1001", "leave_type": "事假", "start_date": "2026-10-15", "end_date": "2026-10-15"}}], "repeat": true}
+{"id": "a9", "emp_id": "E1001", "intent": "action", "turns": ["我发烧了，明天请一天病假"], "tools": ["submit_leave_request"], "rows": [{"table": "leave_requests", "where": {"emp_id": "E1001", "leave_type": "病假", "start_date": "2026-10-13", "end_date": "2026-10-13"}}], "repeat": true}
+{"id": "a10", "emp_id": "E1001", "intent": "action", "turns": ["帮我提交去广州的出差申请，10 月 20 日到 22 日，拜访客户"], "tools": ["submit_trip_request"], "facts": ["CC0001"], "rows": [{"table": "trip_requests", "where": {"emp_id": "E1001", "destination": "广州", "start_date": "2026-10-20", "end_date": "2026-10-22"}}], "repeat": true}
+{"id": "c1", "emp_id": "E1001", "intent": "complex", "turns": ["我下周三去上海出差两天，帮我安排一下"], "tools": ["search_policy", "submit_trip_request"], "facts": ["500", "CC0001"], "rows": [{"table": "trip_requests", "where": {"emp_id": "E1001", "destination": "上海", "start_date": "2026-10-21", "end_date": "2026-10-22"}}], "repeat": true}
+{"id": "c2", "emp_id": "E1001", "intent": "complex", "turns": ["帮我请周五的年假，再把周四下午两点到三点的小会议室A订了"], "tools": ["submit_leave_request", "book_meeting_room"], "rows": [{"table": "leave_requests", "where": {"emp_id": "E1001", "leave_type": "年假", "start_date": "2026-10-16", "end_date": "2026-10-16"}}, {"table": "room_bookings", "where": {"emp_id": "E1001", "room": "小会议室A", "day": "2026-10-15", "start_hour": 14, "end_hour": 15}}], "repeat": true}
+{"id": "c3", "emp_id": "E1001", "intent": "complex", "turns": ["查一下我还有几天年假，够的话帮我请下周一到周三"], "tools": ["get_leave_balance", "submit_leave_request"], "rows": [{"table": "leave_requests", "where": {"emp_id": "E1001", "leave_type": "年假", "start_date": "2026-10-19", "end_date": "2026-10-21"}}], "repeat": true}
+{"id": "c4", "emp_id": "E1002", "intent": "complex", "turns": ["查一下我还有几天年假，够的话帮我请下周一"], "tools": ["get_leave_balance"], "facts": [["不足", "用完", "没有剩余", "0 天", "不够", "已经休完"]], "repeat": true}
+{"id": "c5", "emp_id": "E1001", "intent": "complex", "turns": ["电脑蓝屏了帮我报修，顺便看看我上次的工单处理完没有"], "tools": ["create_ticket", "list_my_tickets"], "facts": ["处理中", "IT0003"], "rows": [{"table": "tickets", "where": {"emp_id": "E1001", "id": "IT0003"}}], "repeat": true}
+{"id": "c6", "emp_id": "E1001", "intent": "complex", "turns": ["我想 10 月 19 日请一天事假，先帮我确认事假扣不扣工资，再提交"], "tools": ["search_policy", "submit_leave_request"], "facts": [["不发", "无薪", "没有工资", "扣"]], "rows": [{"table": "leave_requests", "where": {"emp_id": "E1001", "leave_type": "事假", "start_date": "2026-10-19", "end_date": "2026-10-19"}}], "repeat": true}
+{"id": "o1", "emp_id": "E1001", "intent": "other", "turns": ["你好"], "forbidden_tools": ["*"], "light": true}
+{"id": "o2", "emp_id": "E1001", "intent": "other", "turns": ["帮我写一首关于秋天的诗"], "forbidden_tools": ["*"], "facts": [["公司", "工作", "内部"]], "forbidden": ["落叶", "秋风"], "light": true}
+{"id": "o3", "emp_id": "E1001", "intent": "other", "turns": ["今天天气怎么样"], "forbidden_tools": ["*"], "forbidden": ["晴", "多云", "气温"], "light": true}

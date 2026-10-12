@@ -1,0 +1,44 @@
+{"message": "年假怎么计算", "intent": "knowledge"}
+{"message": "出差住宿标准是多少", "intent": "knowledge"}
+{"message": "VPN 报错 E-809 怎么办", "intent": "knowledge"}
+{"message": "试用期多长时间", "intent": "knowledge"}
+{"message": "我刚入职半年，能休年假吗", "intent": "knowledge"}
+{"message": "我的发票丢了还能报销吗", "intent": "knowledge"}
+{"message": "请病假需要什么证明", "intent": "knowledge"}
+{"message": "会议室一次最多能订几个小时", "intent": "knowledge"}
+{"message": "我还剩几天年假", "intent": "personal"}
+{"message": "报销单 BX20260901 到哪一步了", "intent": "personal"}
+{"message": "我上周报的修处理了吗", "intent": "personal"}
+{"message": "我今年请过哪些假", "intent": "personal"}
+{"message": "明天下午三点到四点哪个会议室有空", "intent": "personal"}
+{"message": "我有没有还没付款的报销", "intent": "personal"}
+{"message": "查一下我的出差申请批了没有", "intent": "personal"}
+{"message": "我名下有几张工单", "intent": "personal"}
+{"message": "帮我请 10 月 16 日一天年假", "intent": "action"}
+{"message": "电脑连不上 VPN，报个修", "intent": "action"}
+{"message": "订明天下午三点的大会议室，一个小时", "intent": "action"}
+{"message": "我发烧了，明天请一天病假", "intent": "action"}
+{"message": "打印机卡纸了，找人来修一下", "intent": "action"}
+{"message": "给我提交一个去广州的出差申请，10 月 20 日到 22 日", "intent": "action"}
+{"message": "下周一想调休一天，帮我提一下", "intent": "action"}
+{"message": "邮箱登不上去了，帮我提个工单", "intent": "action"}
+{"message": "我下周三去上海出差两天，帮我安排一下", "intent": "complex"}
+{"message": "帮我请周五的年假，再把周四下午两点的小会议室A订了", "intent": "complex"}
+{"message": "查一下我还有几天年假，够的话帮我请下周一到周三", "intent": "complex"}
+{"message": "电脑蓝屏了帮我报修，顺便看看我上次的工单处理完没有", "intent": "complex"}
+{"message": "下周二要去北京见客户，住宿能报多少？帮我把出差申请也提了", "intent": "complex"}
+{"message": "明天上午要开个十个人的会，帮我找间够大的会议室订上，再查一下访客要怎么登记", "intent": "complex"}
+{"message": "帮我看看报销单 BX20260901 的进度，如果被退回了告诉我该怎么补材料", "intent": "complex"}
+{"message": "我想 10 月 19 日请一天事假，先帮我确认事假扣不扣工资，再提交", "intent": "complex"}
+{"message": "你好", "intent": "other"}
+{"message": "今天天气怎么样", "intent": "other"}
+{"message": "帮我写一首关于秋天的诗", "intent": "other"}
+{"message": "你是谁", "intent": "other"}
+{"message": "谢谢，辛苦了", "intent": "other"}
+{"message": "推荐一部好看的电影", "intent": "other"}
+{"message": "Python 的装饰器怎么写", "intent": "other"}
+{"message": "明天股市会涨吗", "intent": "other"}
+{"message": "10 月 16 日，年假", "history": "员工：帮我请个假\n助手：请问你要请哪一天，请哪种假？", "intent": "action"}
+{"message": "那事假呢", "history": "员工：病假期间工资怎么发\n助手：病假期间按基本工资的 80% 发放。[1]", "intent": "knowledge"}
+{"message": "那帮我请吧，就下周一", "history": "员工：我还剩几天年假\n助手：你 2026 年的年假共 5 天，已用 2 天，还剩 3 天。", "intent": "action"}
+{"message": "另一张呢", "history": "员工：报销单 BX20260901 到哪一步了\n助手：报销单 BX20260901 目前在财务审核中。", "intent": "personal"}

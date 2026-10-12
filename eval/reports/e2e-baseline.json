@@ -1,0 +1,1169 @@
+{
+ "label": "baseline",
+ "samples": 36,
+ "summary": {
+  "overall": {
+   "samples": 36,
+   "intent": 1.0,
+   "trajectory": 1.0,
+   "outcome": 0.972,
+   "passed": 0.972,
+   "avg_seconds": 5.51,
+   "avg_cost": 0.00277,
+   "avg_worker_calls": 1.97,
+   "avg_worker_input": 3388,
+   "avg_worker_output": 122,
+   "cache_hit": 0.807
+  },
+  "knowledge": {
+   "samples": 9,
+   "intent": 1.0,
+   "trajectory": 1.0,
+   "outcome": 1.0,
+   "passed": 1.0,
+   "avg_seconds": 4.53,
+   "avg_cost": 0.00105,
+   "avg_worker_calls": 1.22,
+   "avg_worker_input": 488,
+   "avg_worker_output": 30,
+   "cache_hit": 0.553
+  },
+  "personal": {
+   "samples": 8,
+   "intent": 1.0,
+   "trajectory": 1.0,
+   "outcome": 1.0,
+   "passed": 1.0,
+   "avg_seconds": 4.46,
+   "avg_cost": 0.00166,
+   "avg_worker_calls": 1.88,
+   "avg_worker_input": 3726,
+   "avg_worker_output": 72,
+   "cache_hit": 0.915
+  },
+  "action": {
+   "samples": 10,
+   "intent": 1.0,
+   "trajectory": 1.0,
+   "outcome": 1.0,
+   "passed": 1.0,
+   "avg_seconds": 5.3,
+   "avg_cost": 0.00233,
+   "avg_worker_calls": 2.2,
+   "avg_worker_input": 4440,
+   "avg_worker_output": 128,
+   "cache_hit": 0.911
+  },
+  "complex": {
+   "samples": 6,
+   "intent": 1.0,
+   "trajectory": 1.0,
+   "outcome": 0.833,
+   "passed": 0.833,
+   "avg_seconds": 9.98,
+   "avg_cost": 0.00856,
+   "avg_worker_calls": 3.83,
+   "avg_worker_input": 7225,
+   "avg_worker_output": 378,
+   "cache_hit": 0.653
+  },
+  "other": {
+   "samples": 3,
+   "intent": 1.0,
+   "trajectory": 1.0,
+   "outcome": 1.0,
+   "passed": 1.0,
+   "avg_seconds": 3.01,
+   "avg_cost": 0.00081,
+   "avg_worker_calls": 0,
+   "avg_worker_input": 0,
+   "avg_worker_output": 0,
+   "cache_hit": 0.0
+  }
+ },
+ "results": [
+  {
+   "id": "k1",
+   "intent": "knowledge",
+   "predicted": "knowledge",
+   "intents": [
+    "knowledge"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [],
+   "steps": 0,
+   "seconds": 4.56,
+   "cost": 0.000932,
+   "worker_calls": 1,
+   "worker_input": 412,
+   "worker_cached": 256,
+   "worker_output": 37,
+   "answer": "可以。确因工作原因没有休完的，剩余天数可以顺延到次年 3 月 31 日，逾期作废，不折算工资。[1]",
+   "question": "年假没休完可以留到明年吗",
+   "hits": [
+    {
+     "id": "员工手册#02",
+     "score": 0.9072
+    },
+    {
+     "id": "新员工入职指引#05",
+     "score": 0.511
+    },
+    {
+     "id": "员工手册#04",
+     "score": 0.3831
+    }
+   ],
+   "query": "年假没休完可以留到明年吗"
+  },
+  {
+   "id": "k2",
+   "intent": "knowledge",
+   "predicted": "knowledge",
+   "intents": [
+    "knowledge"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [],
+   "steps": 0,
+   "seconds": 3.9,
+   "cost": 0.001007,
+   "worker_calls": 1,
+   "worker_input": 334,
+   "worker_cached": 128,
+   "worker_output": 35,
+   "answer": "去上海出差属于一类城市，住宿费每人每晚不超过 500 元，在标准之内凭发票据实报销，超出的部分由个人承担 [1]。",
+   "question": "去上海出差住宿一晚能报多少",
+   "hits": [
+    {
+     "id": "差旅与报销管理办法#03",
+     "score": 0.9858
+    },
+    {
+     "id": "差旅与报销管理办法#08",
+     "score": 0.8602
+    },
+    {
+     "id": "差旅与报销管理办法#04",
+     "score": 0.6313
+    }
+   ],
+   "query": "去上海出差住宿一晚能报多少"
+  },
+  {
+   "id": "k3",
+   "intent": "knowledge",
+   "predicted": "knowledge",
+   "intents": [
+    "knowledge"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [],
+   "steps": 0,
+   "seconds": 3.97,
+   "cost": 0.001104,
+   "worker_calls": 1,
+   "worker_input": 495,
+   "worker_cached": 256,
+   "worker_output": 38,
+   "answer": "VPN 报错 E-809 表示当前网络屏蔽了 VPN 的端口，常见于酒店和机场的无线网络。请更换网络，或者改用手机热点。[1]",
+   "question": "VPN 报错 E-809 是怎么回事",
+   "hits": [
+    {
+     "id": "IT服务指南#01",
+     "score": 0.9914
+    },
+    {
+     "id": "IT服务指南#03",
+     "score": 0.0164
+    },
+    {
+     "id": "IT服务指南#04",
+     "score": 0.0048
+    }
+   ],
+   "query": "VPN 报错 E-809 是怎么回事"
+  },
+  {
+   "id": "k4",
+   "intent": "knowledge",
+   "predicted": "knowledge",
+   "intents": [
+    "knowledge"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [],
+   "steps": 0,
+   "seconds": 3.42,
+   "cost": 0.000842,
+   "worker_calls": 1,
+   "worker_input": 460,
+   "worker_cached": 256,
+   "worker_output": 15,
+   "answer": "试用期工资为转正后工资的 90%。[1]",
+   "question": "试用期工资怎么算",
+   "hits": [
+    {
+     "id": "新员工入职指引#02",
+     "score": 0.9585
+    },
+    {
+     "id": "员工手册#02",
+     "score": 0.2789
+    },
+    {
+     "id": "员工手册#03",
+     "score": 0.2579
+    }
+   ],
+   "query": "试用期工资怎么算"
+  },
+  {
+   "id": "k5",
+   "intent": "knowledge",
+   "predicted": "knowledge",
+   "intents": [
+    "knowledge"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [],
+   "steps": 0,
+   "seconds": 4.5,
+   "cost": 0.000949,
+   "worker_calls": 1,
+   "worker_input": 346,
+   "worker_cached": 128,
+   "worker_output": 25,
+   "answer": "连续 2 天及以上的病假，需要提供二级及以上医院出具的诊断证明或病假条 [1]。",
+   "question": "请两天病假需要什么证明",
+   "hits": [
+    {
+     "id": "员工手册#03",
+     "score": 0.9871
+    },
+    {
+     "id": "员工手册#06",
+     "score": 0.6018
+    },
+    {
+     "id": "员工手册#07",
+     "score": 0.2589
+    }
+   ],
+   "query": "请两天病假需要什么证明"
+  },
+  {
+   "id": "k6",
+   "intent": "knowledge",
+   "predicted": "knowledge",
+   "intents": [
+    "knowledge",
+    "knowledge"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [],
+   "steps": 0,
+   "seconds": 9.05,
+   "cost": 0.002442,
+   "worker_calls": 3,
+   "worker_input": 990,
+   "worker_cached": 512,
+   "worker_output": 86,
+   "answer": "事假期间不发放工资。[1]",
+   "question": "那事假呢，扣工资吗",
+   "hits": [
+    {
+     "id": "员工手册#04",
+     "score": 0.971
+    },
+    {
+     "id": "员工手册#02",
+     "score": 0.2306
+    },
+    {
+     "id": "新员工入职指引#06",
+     "score": 0.1957
+    }
+   ],
+   "query": "事假扣工资吗？"
+  },
+  {
+   "id": "k7",
+   "intent": "knowledge",
+   "predicted": "knowledge",
+   "intents": [
+    "knowledge"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [],
+   "steps": 0,
+   "seconds": 3.53,
+   "cost": 0.000742,
+   "worker_calls": 1,
+   "worker_input": 421,
+   "worker_cached": 256,
+   "worker_output": 12,
+   "answer": "HR-07 是转正申请表单。[1]",
+   "question": "HR-07 是什么表",
+   "hits": [
+    {
+     "id": "新员工入职指引#03",
+     "score": 0.977
+    },
+    {
+     "id": "IT服务指南#04",
+     "score": 0.018
+    },
+    {
+     "id": "差旅与报销管理办法#06",
+     "score": 0.0083
+    }
+   ],
+   "query": "HR-07 是什么表"
+  },
+  {
+   "id": "k8",
+   "intent": "knowledge",
+   "predicted": "knowledge",
+   "intents": [
+    "knowledge"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [],
+   "steps": 0,
+   "seconds": 4.17,
+   "cost": 0.000714,
+   "worker_calls": 1,
+   "worker_input": 416,
+   "worker_cached": 256,
+   "worker_output": 10,
+   "answer": "制度资料中没有找到关于公司班车的规定。",
+   "question": "公司有班车吗",
+   "hits": [
+    {
+     "id": "差旅与报销管理办法#07",
+     "score": 0.0574
+    },
+    {
+     "id": "差旅与报销管理办法#01",
+     "score": 0.0335
+    },
+    {
+     "id": "员工手册#01",
+     "score": 0.0327
+    }
+   ],
+   "query": "公司有班车吗"
+  },
+  {
+   "id": "k9",
+   "intent": "knowledge",
+   "predicted": "knowledge",
+   "intents": [
+    "knowledge"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [],
+   "steps": 0,
+   "seconds": 3.63,
+   "cost": 0.000675,
+   "worker_calls": 1,
+   "worker_input": 522,
+   "worker_cached": 384,
+   "worker_output": 10,
+   "answer": "制度资料中没有找到关于公司年会时间的规定。",
+   "question": "公司的年会一般什么时候开",
+   "hits": [
+    {
+     "id": "员工手册#02",
+     "score": 0.0944
+    },
+    {
+     "id": "员工手册#01",
+     "score": 0.0789
+    },
+    {
+     "id": "员工手册#06",
+     "score": 0.0512
+    }
+   ],
+   "query": "公司的年会一般什么时候开"
+  },
+  {
+   "id": "p1",
+   "intent": "personal",
+   "predicted": "personal",
+   "intents": [
+    "personal"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "get_leave_balance"
+   ],
+   "steps": 2,
+   "seconds": 4.18,
+   "cost": 0.001516,
+   "worker_calls": 2,
+   "worker_input": 3946,
+   "worker_cached": 3584,
+   "worker_output": 43,
+   "answer": "你2026年的年假共5天，已用2天，还剩3天。",
+   "question": "我还剩几天年假",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "p2",
+   "intent": "personal",
+   "predicted": "personal",
+   "intents": [
+    "personal"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "get_leave_balance"
+   ],
+   "steps": 2,
+   "seconds": 4.54,
+   "cost": 0.001516,
+   "worker_calls": 2,
+   "worker_input": 3946,
+   "worker_cached": 3584,
+   "worker_output": 43,
+   "answer": "你2026年的年假共10天，已用10天，剩余0天。",
+   "question": "我还剩几天年假",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "p3",
+   "intent": "personal",
+   "predicted": "personal",
+   "intents": [
+    "personal"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "get_expense_status"
+   ],
+   "steps": 2,
+   "seconds": 4.59,
+   "cost": 0.001691,
+   "worker_calls": 2,
+   "worker_input": 4004,
+   "worker_cached": 3712,
+   "worker_output": 80,
+   "answer": "报销单 BX20260901（差旅费，金额 1280 元，2026-09-28 提交）目前状态是：财务审核中。",
+   "question": "报销单 BX20260901 到哪一步了",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "p4",
+   "intent": "personal",
+   "predicted": "personal",
+   "intents": [
+    "personal"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "list_my_tickets"
+   ],
+   "steps": 2,
+   "seconds": 4.88,
+   "cost": 0.001742,
+   "worker_calls": 2,
+   "worker_input": 3977,
+   "worker_cached": 3584,
+   "worker_output": 63,
+   "answer": "你提交的 IT 工单 IT0001（硬件类，工位打印机无法连接，2026-10-08 提交）目前状态是“处理中”，还没有完成。",
+   "question": "我上周报的修处理了吗",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "p5",
+   "intent": "personal",
+   "predicted": "personal",
+   "intents": [
+    "personal"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "get_expense_status"
+   ],
+   "steps": 2,
+   "seconds": 4.25,
+   "cost": 0.001777,
+   "worker_calls": 2,
+   "worker_input": 4011,
+   "worker_cached": 3712,
+   "worker_output": 91,
+   "answer": "您共有 2 张报销单：\n\nBX20260901，差旅费，1280 元，2026-09-28 提交，当前状态：财务审核中。\n\nBX20260915，快递费，86.5 元，2026-09-16 提交，当前状态：已付款。",
+   "question": "我有哪些报销单",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "p6",
+   "intent": "personal",
+   "predicted": "personal",
+   "intents": [
+    "personal"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "list_meeting_rooms"
+   ],
+   "steps": 2,
+   "seconds": 4.56,
+   "cost": 0.002175,
+   "worker_calls": 2,
+   "worker_input": 4014,
+   "worker_cached": 3712,
+   "worker_output": 139,
+   "answer": "明天（2026-10-13，星期二）14:00-16:00 空闲的会议室有：小会议室A（可容纳6人）、小会议室B（可容纳6人）。大会议室该时段已被占用。需要我帮你预订其中一间吗？",
+   "question": "明天下午两点到四点哪个会议室有空",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "p7",
+   "intent": "personal",
+   "predicted": "personal",
+   "intents": [
+    "personal"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "get_expense_status"
+   ],
+   "steps": 2,
+   "seconds": 5.15,
+   "cost": 0.001912,
+   "worker_calls": 2,
+   "worker_input": 3957,
+   "worker_cached": 3584,
+   "worker_output": 88,
+   "answer": "没有查到单号 BX20260820 的报销单，可能是单号有误，或者该单号不属于你本人。你可以核对一下单号，或者我帮你列出你名下所有的报销单。",
+   "question": "报销单 BX20260820 到哪一步了",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "p8",
+   "intent": "personal",
+   "predicted": "personal",
+   "intents": [
+    "personal"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [],
+   "steps": 1,
+   "seconds": 3.51,
+   "cost": 0.000978,
+   "worker_calls": 1,
+   "worker_input": 1954,
+   "worker_cached": 1792,
+   "worker_output": 32,
+   "answer": "抱歉，我只能查询和办理您本人的事务，无法查询其他员工的年假信息。如果您需要，我可以帮您查一下您自己的年假余额。",
+   "question": "帮我查一下王强（工号 E1003）还剩几天年假",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "a1",
+   "intent": "action",
+   "predicted": "action",
+   "intents": [
+    "action"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "get_leave_balance",
+    "submit_leave_request"
+   ],
+   "steps": 3,
+   "seconds": 6.56,
+   "cost": 0.003093,
+   "worker_calls": 3,
+   "worker_input": 6106,
+   "worker_cached": 5504,
+   "worker_output": 170,
+   "answer": "已提交请假单 QJ0003：年假，2026-10-16（本周星期五）一天，状态为待审批。你今年年假共 5 天，已用 2 天，剩余 3 天，本次申请后剩余 2 天。",
+   "question": "帮我请这周五一天年假",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "a2",
+   "intent": "action",
+   "predicted": "action",
+   "intents": [
+    "action"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "get_leave_balance",
+    "submit_leave_request"
+   ],
+   "steps": 3,
+   "seconds": 6.39,
+   "cost": 0.002701,
+   "worker_calls": 3,
+   "worker_input": 6066,
+   "worker_cached": 5504,
+   "worker_output": 131,
+   "answer": "好的，这次请假没有办理。你目前年假剩余 3 天，需要的话随时告诉我。",
+   "question": "帮我请这周五一天年假",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "a3",
+   "intent": "action",
+   "predicted": "action",
+   "intents": [
+    "action"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "get_leave_balance"
+   ],
+   "steps": 2,
+   "seconds": 4.9,
+   "cost": 0.001784,
+   "worker_calls": 2,
+   "worker_input": 3950,
+   "worker_cached": 3584,
+   "worker_output": 75,
+   "answer": "你的年假余额为 0 天（今年共 10 天，已全部用完），无法提交 2026-10-16（本周五）的年假申请。你可以考虑改用事假或调休，需要的话告诉我。",
+   "question": "帮我请这周五一天年假",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "a4",
+   "intent": "action",
+   "predicted": "action",
+   "intents": [
+    "action"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "create_ticket"
+   ],
+   "steps": 2,
+   "seconds": 4.99,
+   "cost": 0.002227,
+   "worker_calls": 2,
+   "worker_input": 4044,
+   "worker_cached": 3712,
+   "worker_output": 136,
+   "answer": "已提交 IT 报修工单，单号 IT0003，类别为网络，状态待处理。故障描述：在家连接公司 VPN 失败，报错 E-809。",
+   "question": "电脑在家连不上 VPN，报错 E-809，帮我报个修",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "a5",
+   "intent": "action",
+   "predicted": "action",
+   "intents": [
+    "action"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "list_meeting_rooms"
+   ],
+   "steps": 2,
+   "seconds": 4.67,
+   "cost": 0.002143,
+   "worker_calls": 2,
+   "worker_input": 4014,
+   "worker_cached": 3712,
+   "worker_output": 135,
+   "answer": "明天（2026-10-13）15:00-16:00 大会议室不可用，该时段空闲的只有小会议室A（可容纳6人）和小会议室B（可容纳6人）。需要我改订其中一间吗？",
+   "question": "订明天下午三点到四点的大会议室",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "a6",
+   "intent": "action",
+   "predicted": "action",
+   "intents": [
+    "action"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "book_meeting_room"
+   ],
+   "steps": 2,
+   "seconds": 4.95,
+   "cost": 0.002195,
+   "worker_calls": 2,
+   "worker_input": 4050,
+   "worker_cached": 3712,
+   "worker_output": 132,
+   "answer": "已预订成功：小会议室A，2026-10-13（明天）10:00-11:00，预订单号 HY0002。",
+   "question": "订明天上午十点到十一点的小会议室A",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "a7",
+   "intent": "action",
+   "predicted": "action",
+   "intents": [
+    "action"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [],
+   "steps": 1,
+   "seconds": 2.61,
+   "cost": 0.000866,
+   "worker_calls": 1,
+   "worker_input": 1942,
+   "worker_cached": 1792,
+   "worker_output": 24,
+   "answer": "请问您要请哪种假（年假、病假、事假、调休），从哪天到哪天？",
+   "question": "帮我请个假",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "a8",
+   "intent": "action",
+   "predicted": "action",
+   "intents": [
+    "action",
+    "action"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "submit_leave_request"
+   ],
+   "steps": 3,
+   "seconds": 8.03,
+   "cost": 0.003535,
+   "worker_calls": 3,
+   "worker_input": 6088,
+   "worker_cached": 5504,
+   "worker_output": 180,
+   "answer": "请假单已提交：单号 QJ0003，事假，2026-10-15（本周四）共 1 天，事由“家里有事”，当前状态为待审批。",
+   "question": "这周四，事假，家里有事",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "a9",
+   "intent": "action",
+   "predicted": "action",
+   "intents": [
+    "action"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "submit_leave_request"
+   ],
+   "steps": 2,
+   "seconds": 5.02,
+   "cost": 0.002367,
+   "worker_calls": 2,
+   "worker_input": 4061,
+   "worker_cached": 3712,
+   "worker_output": 151,
+   "answer": "已提交病假申请，单号 QJ0003，日期 2026-10-13（明天，星期二），共 1 天，事由发烧，当前状态为待审批。请留意审批结果，注意休息。",
+   "question": "我发烧了，明天请一天病假",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "a10",
+   "intent": "action",
+   "predicted": "action",
+   "intents": [
+    "action"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "submit_trip_request"
+   ],
+   "steps": 2,
+   "seconds": 4.89,
+   "cost": 0.002351,
+   "worker_calls": 2,
+   "worker_input": 4079,
+   "worker_cached": 3712,
+   "worker_output": 141,
+   "answer": "出差申请已提交，单号 CC0001，目的地广州，2026-10-20 至 2026-10-22，事由拜访客户，当前状态为待审批。",
+   "question": "帮我提交去广州的出差申请，10 月 20 日到 22 日，拜访客户",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "c1",
+   "intent": "complex",
+   "predicted": "complex",
+   "intents": [
+    "complex"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": false,
+   "passed": false,
+   "problems": [
+    "结果：回答中缺少 500"
+   ],
+   "tools": [
+    "search_policy",
+    "search_policy",
+    "submit_trip_request"
+   ],
+   "steps": 3,
+   "seconds": 10.57,
+   "cost": 0.009004,
+   "worker_calls": 4,
+   "worker_input": 7678,
+   "worker_cached": 5120,
+   "worker_output": 421,
+   "answer": "已为你办妥，情况如下。\n\n制度要求（《差旅与报销管理办法》）：出差须至少提前 2 个工作日提交出差申请（表单编号 FN-02），写明目的地、起止日期和事由，经部门主管批准后方可出行；没有出差申请的相关费用不予报销，行程变化要在出发前修改申请。出差返回后应在 15 个自然日内提交报销单（表单编号 FN-05），超过 30 个自然日不再受理。制度中没有针对上海单独规定申请流程和材料，按上述通用要求办理即可。\n\n出差申请已提交：单号 CC0001，目的地上海，2026-10-21 至 2026-10-22，当前状态为待审批。今天是 10-12，距出发日 10-21 已满足提前 2 个工作日的要求。事由一栏我没有填写，如需补充请告诉我。",
+   "question": "我下周三去上海出差两天，帮我安排一下",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "c2",
+   "intent": "complex",
+   "predicted": "complex",
+   "intents": [
+    "complex"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "search_policy",
+    "get_leave_balance",
+    "list_leave_requests",
+    "submit_leave_request",
+    "list_meeting_rooms",
+    "book_meeting_room"
+   ],
+   "steps": 4,
+   "seconds": 12.15,
+   "cost": 0.011153,
+   "worker_calls": 5,
+   "worker_input": 10871,
+   "worker_cached": 8064,
+   "worker_output": 611,
+   "answer": "两件事都办好了。\n\n年假：按《员工手册》规定，年假需提前 3 个工作日提交申请（表单 HR-01），由部门主管批准，最小申请单位为 1 天。今天是 10 月 12 日（周一），10 月 16 日（周五）在时限内。你今年年假共 5 天，已用 2 天（QJ0001，7 月 6 日至 7 日），剩余 3 天，足够。已提交请假单 QJ0003，年假 1 天，日期 2026-10-16，状态为待审批。\n\n会议室：10 月 15 日（周四）14:00-15:00 小会议室A 空闲，已预订成功，单号 HY0002。",
+   "question": "帮我请周五的年假，再把周四下午两点到三点的小会议室A订了",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "c3",
+   "intent": "complex",
+   "predicted": "complex",
+   "intents": [
+    "complex"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "get_leave_balance",
+    "list_leave_requests",
+    "search_policy",
+    "submit_leave_request"
+   ],
+   "steps": 3,
+   "seconds": 9.51,
+   "cost": 0.008951,
+   "worker_calls": 4,
+   "worker_input": 7619,
+   "worker_cached": 4992,
+   "worker_output": 397,
+   "answer": "你的年假情况：2026 年共 5 天，已用 2 天（QJ0001，2026-07-06 至 07-07，已批准），剩余 3 天，足够覆盖下周一到周三这 3 天。\n\n请假单已提交：单号 QJ0003，年假，2026-10-19 至 2026-10-21，共 3 天，状态为待审批。\n\n制度方面提醒两点：按《员工手册》，年假需提前 3 个工作日提交申请（表单 HR-01），由部门主管批准；请假 3 天及以内的由部门主管批准，本次正好 3 天，无需再报人事行政部经理。年假期间工资照常发放。",
+   "question": "查一下我还有几天年假，够的话帮我请下周一到周三",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "c4",
+   "intent": "complex",
+   "predicted": "complex",
+   "intents": [
+    "complex"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "get_leave_balance",
+    "list_leave_requests",
+    "search_policy"
+   ],
+   "steps": 2,
+   "seconds": 8.9,
+   "cost": 0.00757,
+   "worker_calls": 3,
+   "worker_input": 4874,
+   "worker_cached": 2560,
+   "worker_output": 315,
+   "answer": "你的年假余额不足，无法请下周一（2026-10-19）的年假。\n\n查询结果：2026 年你的年假总额 10 天，已用 10 天，剩余 0 天；请假记录里目前没有已提交的请假单。\n\n按《员工手册》规定，年假需提前 3 个工作日提交申请（表单 HR-01），由部门主管批准，最小申请单位为 1 天。由于剩余年假为 0 天，这次年假申请没有提交。\n\n如果你确实需要下周一休息，可以考虑申请事假：事假需提前 1 个工作日申请，由部门主管批准，但事假期间不发放工资，且一个自然年度内累计不得超过 15 天。需要我帮你按事假提交吗？",
+   "question": "查一下我还有几天年假，够的话帮我请下周一",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "c5",
+   "intent": "complex",
+   "predicted": "complex",
+   "intents": [
+    "complex"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "list_my_tickets",
+    "create_ticket"
+   ],
+   "steps": 2,
+   "seconds": 6.67,
+   "cost": 0.005702,
+   "worker_calls": 3,
+   "worker_input": 4563,
+   "worker_cached": 2560,
+   "worker_output": 158,
+   "answer": "您上次的工单 IT0001（工位打印机无法连接，10月8日提交）目前状态是“处理中”，还没有处理完。新的蓝屏报修已提交，工单号 IT0003，类别为硬件，状态“待处理”。",
+   "question": "电脑蓝屏了帮我报修，顺便看看我上次的工单处理完没有",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "c6",
+   "intent": "complex",
+   "predicted": "complex",
+   "intents": [
+    "complex"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [
+    "search_policy",
+    "get_leave_balance",
+    "list_leave_requests",
+    "submit_leave_request"
+   ],
+   "steps": 3,
+   "seconds": 12.11,
+   "cost": 0.009003,
+   "worker_calls": 4,
+   "worker_input": 7745,
+   "worker_cached": 4992,
+   "worker_output": 369,
+   "answer": "关于事假工资：按《员工手册》规定，事假期间不发放工资；事假需提前 1 个工作日申请，由部门主管批准，一个自然年度内累计不得超过 15 天。另外，事假的前提是没有可用的年假和调休。\n\n你的年假情况：2026 年共 5 天，已用 2 天，剩余 3 天；已提交的请假记录只有一条，即 7 月 6 日至 7 月 7 日的年假 2 天，已批准。\n\n事假申请已提交：单号 QJ0003，类型事假，2026 年 10 月 19 日一天，状态待审批。",
+   "question": "我想 10 月 19 日请一天事假，先帮我确认事假扣不扣工资，再提交",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "o1",
+   "intent": "other",
+   "predicted": "other",
+   "intents": [
+    "other"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [],
+   "steps": 0,
+   "seconds": 3.15,
+   "cost": 0.000826,
+   "worker_calls": 0,
+   "worker_input": 0,
+   "worker_cached": 0,
+   "worker_output": 0,
+   "answer": "你好，我是远航实业员工助手小远。我可以帮你解答公司制度、查询年假和报销进度，也能办理请假、出差申请、IT报修和会议室预订，有什么需要请告诉我。",
+   "question": "你好",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "o2",
+   "intent": "other",
+   "predicted": "other",
+   "intents": [
+    "other"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [],
+   "steps": 0,
+   "seconds": 2.88,
+   "cost": 0.00075,
+   "worker_calls": 0,
+   "worker_input": 0,
+   "worker_cached": 0,
+   "worker_output": 0,
+   "answer": "抱歉，我只处理公司内部的事务，比如制度咨询、年假和报销进度查询、请假、出差申请、IT报修和会议室预订。",
+   "question": "帮我写一首关于秋天的诗",
+   "hits": [],
+   "query": ""
+  },
+  {
+   "id": "o3",
+   "intent": "other",
+   "predicted": "other",
+   "intents": [
+    "other"
+   ],
+   "intent_ok": true,
+   "trajectory_ok": true,
+   "outcome_ok": true,
+   "passed": true,
+   "problems": [],
+   "tools": [],
+   "steps": 0,
+   "seconds": 2.99,
+   "cost": 0.00085,
+   "worker_calls": 0,
+   "worker_input": 0,
+   "worker_cached": 0,
+   "worker_output": 0,
+   "answer": "你好，我是远航实业的小远，只负责处理公司内部事务，比如制度咨询、年假和报销查询、请假出差申请、IT报修和会议室预订。天气情况我这边帮不上忙。",
+   "question": "今天天气怎么样",
+   "hits": [],
+   "query": ""
+  }
+ ]
+}

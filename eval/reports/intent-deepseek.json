@@ -1,0 +1,21 @@
+{
+ "router": {
+  "model": "deepseek-chat",
+  "samples": 44,
+  "accuracy": 1.0,
+  "per_class": {
+   "knowledge": "9/9",
+   "personal": "9/9",
+   "action": "10/10",
+   "complex": "8/8",
+   "other": "8/8"
+  },
+  "confusion": {},
+  "avg_seconds": 1.21,
+  "max_seconds": 2.49,
+  "avg_input_tokens": 406,
+  "avg_output_tokens": 1,
+  "cost_per_1000": 0.318,
+  "wrong": []
+ }
+}

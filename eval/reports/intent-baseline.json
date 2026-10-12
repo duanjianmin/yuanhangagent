@@ -1,0 +1,69 @@
+{
+ "router": {
+  "model": "deepseek-r1:14b",
+  "samples": 44,
+  "accuracy": 0.909,
+  "per_class": {
+   "knowledge": "9/9",
+   "personal": "9/9",
+   "action": "10/10",
+   "complex": "5/8",
+   "other": "7/8"
+  },
+  "confusion": {
+   "complex→action": 2,
+   "complex→personal": 1,
+   "other→knowledge": 1
+  },
+  "avg_seconds": 4.14,
+  "max_seconds": 7.14,
+  "avg_input_tokens": 334,
+  "avg_output_tokens": 177,
+  "cost_per_1000": 0.0,
+  "wrong": [
+   {
+    "message": "我下周三去上海出差两天，帮我安排一下",
+    "expected": "complex",
+    "predicted": "action",
+    "raw": "action"
+   },
+   {
+    "message": "帮我请周五的年假，再把周四下午两点的小会议室A订了",
+    "expected": "complex",
+    "predicted": "action",
+    "raw": "action"
+   },
+   {
+    "message": "帮我看看报销单 BX20260901 的进度，如果被退回了告诉我该怎么补材料",
+    "expected": "complex",
+    "predicted": "personal",
+    "raw": "personal"
+   },
+   {
+    "message": "Python 的装饰器怎么写",
+    "expected": "other",
+    "predicted": "knowledge",
+    "raw": "knowledge"
+   }
+  ]
+ },
+ "worker": {
+  "model": "deepseek-chat",
+  "samples": 44,
+  "accuracy": 1.0,
+  "per_class": {
+   "knowledge": "9/9",
+   "personal": "9/9",
+   "action": "10/10",
+   "complex": "8/8",
+   "other": "8/8"
+  },
+  "confusion": {},
+  "avg_seconds": 1.03,
+  "max_seconds": 1.77,
+  "avg_input_tokens": 305,
+  "avg_output_tokens": 1,
+  "cost_per_1000": 0.613,
+  "wrong": []
+ }
+}

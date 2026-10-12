@@ -1,0 +1,68 @@
+{
+ "calibration": {
+  "router": {
+   "model": "deepseek-chat",
+   "cases": 24,
+   "agreement": 1.0,
+   "missed_unfaithful": 0,
+   "false_alarm": 0,
+   "invalid": 0,
+   "avg_seconds": 1.25,
+   "cost": 0.01735,
+   "wrong": []
+  }
+ },
+ "judge": "deepseek-chat",
+ "answers": [
+  {
+   "id": "k1",
+   "question": "年假没休完可以留到明年吗",
+   "answer": "可以。年假应当在当年休完，确因工作原因没有休完的，剩余天数可以顺延到次年 3 月 31 日，逾期作废，不折算工资。[1]",
+   "verdict": "faithful",
+   "raw": "{\"reason\": \"回答中年假顺延至次年3月31日、逾期作废且不折算工资的内容与资料完全一致。\", \"verdict\": \"faithful\"}"
+  },
+  {
+   "id": "k2",
+   "question": "去上海出差住宿一晚能报多少",
+   "answer": "一类城市（北京、上海、广州、深圳）每人每晚不超过 500 元，在标准之内凭发票据实报销，超出的部分由个人承担 [1]。",
+   "verdict": "faithful",
+   "raw": "{\"reason\": \"回答中关于上海属于一类城市、每人每晚不超过500元、标准内凭发票据实报销、超出部分个人承担，均与资料一致。\", \"verdict\": \"faithful\"}"
+  },
+  {
+   "id": "k3",
+   "question": "VPN 报错 E-809 是怎么回事",
+   "answer": "VPN 报错 E-809 表示当前网络屏蔽了 VPN 的端口，常见于酒店和机场的无线网络。请更换网络，或者改用手机热点。[1]",
+   "verdict": "faithful",
+   "raw": "{\"reason\": \"回答中关于E-809的含义、常见场景及解决办法均与资料完全一致。\", \"verdict\": \"faithful\"}"
+  },
+  {
+   "id": "k4",
+   "question": "试用期工资怎么算",
+   "answer": "试用期工资为转正后工资的 90%。[1]",
+   "verdict": "faithful",
+   "raw": "{\"reason\": \"回答中的试用期工资比例与资料完全一致。\", \"verdict\": \"faithful\"}"
+  },
+  {
+   "id": "k5",
+   "question": "请两天病假需要什么证明",
+   "answer": "连续 2 天及以上的病假，需要提供二级及以上医院出具的诊断证明或病假条 [1]。",
+   "verdict": "faithful",
+   "raw": "{\"reason\": \"回答中关于连续2天病假需提供二级及以上医院诊断证明或病假条的内容与资料完全一致。\", \"verdict\": \"faithful\"}"
+  },
+  {
+   "id": "k6",
+   "question": "那事假呢，扣工资吗",
+   "answer": "事假期间不发放工资。[1]",
+   "verdict": "faithful",
+   "raw": "{\"reason\": \"资料明确写明“事假期间不发放工资”，回答与该事实一致。\", \"verdict\": \"faithful\"}"
+  },
+  {
+   "id": "k7",
+   "question": "HR-07 是什么表",
+   "answer": "HR-07 是转正申请表单。[1]",
+   "verdict": "faithful",
+   "raw": "{\"reason\": \"资料明确写明员工提交转正申请的表单编号为 HR-07，回答与资料一致。\", \"verdict\": \"faithful\"}"
+  }
+ ],
+ "faithfulness": 1.0
+}

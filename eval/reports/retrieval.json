@@ -1,0 +1,61 @@
+{
+ "samples": 36,
+ "overall": {
+  "bm25": {
+   "recall@1": 0.806,
+   "recall@3": 0.944,
+   "mrr": 0.861
+  },
+  "vector": {
+   "recall@1": 0.722,
+   "recall@3": 0.833,
+   "mrr": 0.786
+  },
+  "hybrid": {
+   "recall@1": 0.639,
+   "recall@3": 0.944,
+   "mrr": 0.802
+  },
+  "hybrid_rerank": {
+   "recall@1": 0.972,
+   "recall@3": 0.972,
+   "mrr": 0.977
+  }
+ },
+ "by_kind": {
+  "colloquial": {
+   "samples": 10,
+   "bm25": 0.8,
+   "vector": 1.0,
+   "hybrid": 0.9,
+   "hybrid_rerank": 0.9
+  },
+  "confusable": {
+   "samples": 8,
+   "bm25": 1.0,
+   "vector": 1.0,
+   "hybrid": 1.0,
+   "hybrid_rerank": 1.0
+  },
+  "keyword": {
+   "samples": 10,
+   "bm25": 1.0,
+   "vector": 0.4,
+   "hybrid": 0.9,
+   "hybrid_rerank": 1.0
+  },
+  "plain": {
+   "samples": 8,
+   "bm25": 1.0,
+   "vector": 1.0,
+   "hybrid": 1.0,
+   "hybrid_rerank": 1.0
+  }
+ },
+ "misses": {
+  "报销的钱什么时候能到账": {
+   "rank": 6,
+   "top": "差旅与报销管理办法#05"
+  }
+ }
+}

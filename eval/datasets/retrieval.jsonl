@@ -1,0 +1,36 @@
+{"q": "年假有几天", "expect": ["员工手册#02"], "kind": "plain"}
+{"q": "出差住宿标准是多少", "expect": ["差旅与报销管理办法#03"], "kind": "plain"}
+{"q": "试用期多长", "expect": ["新员工入职指引#02"], "kind": "plain"}
+{"q": "会议室最多能提前几天预订", "expect": ["行政服务指南#01"], "kind": "plain"}
+{"q": "公司邮箱的附件最大多少", "expect": ["IT服务指南#02"], "kind": "plain"}
+{"q": "出差回来报销要在多少天内提交", "expect": ["差旅与报销管理办法#05"], "kind": "plain"}
+{"q": "工资几号发", "expect": ["新员工入职指引#06"], "kind": "plain"}
+{"q": "密码多久过期", "expect": ["IT服务指南#03"], "kind": "plain"}
+{"q": "E-809 是什么问题", "expect": ["IT服务指南#01"], "kind": "keyword"}
+{"q": "登录提示 E-691", "expect": ["IT服务指南#01"], "kind": "keyword"}
+{"q": "HR-07 是什么表", "expect": ["新员工入职指引#03"], "kind": "keyword"}
+{"q": "FN-05 怎么用", "expect": ["差旅与报销管理办法#05"], "kind": "keyword"}
+{"q": "AD-05 表单用来做什么", "expect": ["行政服务指南#03"], "kind": "keyword"}
+{"q": "HR-03 什么时候填", "expect": ["员工手册#05"], "kind": "keyword"}
+{"q": "Yuanhang-Guest 的密码去哪里问", "expect": ["IT服务指南#06"], "kind": "keyword"}
+{"q": "pwd.yuanhang.example 是做什么的", "expect": ["IT服务指南#03"], "kind": "keyword"}
+{"q": "AD-02 是哪张单子", "expect": ["行政服务指南#02"], "kind": "keyword"}
+{"q": "HR-02 是干什么用的", "expect": ["员工手册#01"], "kind": "keyword"}
+{"q": "生病了去医院，回来要交什么东西", "expect": ["员工手册#03"], "kind": "colloquial"}
+{"q": "住酒店的时候连不上公司内网", "expect": ["IT服务指南#01"], "kind": "colloquial"}
+{"q": "报销的钱什么时候能到账", "expect": ["差旅与报销管理办法#06"], "kind": "colloquial"}
+{"q": "上班迟到会扣钱吗", "expect": ["员工手册#01"], "kind": "colloquial"}
+{"q": "电脑用了好几年很卡，能换新的吗", "expect": ["IT服务指南#05"], "kind": "colloquial"}
+{"q": "客户要来公司拜访，需要办什么手续", "expect": ["行政服务指南#05"], "kind": "colloquial"}
+{"q": "请客户吃饭一个人能花多少钱", "expect": ["差旅与报销管理办法#08"], "kind": "colloquial"}
+{"q": "账号被锁了怎么办", "expect": ["IT服务指南#03"], "kind": "colloquial"}
+{"q": "工牌丢了怎么办", "expect": ["行政服务指南#06"], "kind": "colloquial"}
+{"q": "出差可以坐飞机吗", "expect": ["差旅与报销管理办法#02"], "kind": "colloquial"}
+{"q": "刚入职半年能休年假吗", "expect": ["新员工入职指引#05", "员工手册#02"], "kind": "confusable"}
+{"q": "加班换来的假多久不用就作废", "expect": ["员工手册#05"], "kind": "confusable"}
+{"q": "年假用完了，家里有事还想请假怎么办", "expect": ["员工手册#04"], "kind": "confusable"}
+{"q": "请五天假需要谁批准", "expect": ["员工手册#07"], "kind": "confusable"}
+{"q": "病假期间工资怎么发", "expect": ["员工手册#03"], "kind": "confusable"}
+{"q": "出差每天的吃饭补贴是多少", "expect": ["差旅与报销管理办法#04"], "kind": "confusable"}
+{"q": "发票丢了还能报销吗", "expect": ["差旅与报销管理办法#07"], "kind": "confusable"}
+{"q": "还没转正想辞职，要提前多久说", "expect": ["新员工入职指引#02"], "kind": "confusable"}

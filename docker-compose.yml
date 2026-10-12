@@ -1,0 +1,38 @@
+# 三个基础服务：向量数据库、Embedding、重排序。
+#
+# 镜像：三个镜像的官方地址都在 ghcr.io（GitHub 的容器仓库）。这里默认从它在国内的镜像站
+#       ghcr.nju.edu.cn（南京大学）拉取，内容与官方完全相同。能直接访问 ghcr.io 的读者，
+#       启动之前设置环境变量 IMAGE_REGISTRY=ghcr.io 即可。
+# 数据：Chroma 的数据保存在宿主机的目录 CHROMA_DATA_DIR（默认 ./runtime/chroma）中，
+#       容器删除、Docker 重启、机器重启之后都还在。
+# 模型：模型文件事先下载到 MODEL_DIR（默认 D:/work/model），容器只读挂载，启动时不联网。
+#       下载的办法：python -m scripts.download_models
+# 重启：restart: unless-stopped 让容器在 Docker 启动时自动恢复运行（手动 stop 的除外）。
+name: yuanhang
+
+services:
+  chroma:
+    image: ${IMAGE_REGISTRY:-ghcr.nju.edu.cn}/chroma-core/chroma:1.5.9
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ${CHROMA_DATA_DIR:-./runtime/chroma}:/data
+
+  embed:
+    image: ${IMAGE_REGISTRY:-ghcr.nju.edu.cn}/huggingface/text-embeddings-inference:cpu-latest
+    restart: unless-stopped
+    command: ["--model-id", "/model"]
+    ports:
+      - "8082:80"
+    volumes:
+      - ${MODEL_DIR:-D:/work/model}/bge-small-zh-v1.5:/model:ro
+
+  rerank:
+    image: ${IMAGE_REGISTRY:-ghcr.nju.edu.cn}/huggingface/text-embeddings-inference:cpu-latest
+    restart: unless-stopped
+    command: ["--model-id", "/model"]
+    ports:
+      - "8081:80"
+    volumes:
+      - ${MODEL_DIR:-D:/work/model}/bge-reranker-base:/model:ro

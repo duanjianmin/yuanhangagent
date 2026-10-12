@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+httpx
+openai
+pydantic
+chromadb
+langgraph
+langgraph-checkpoint-sqlite
+langchain-core
+langchain-openai
+mcp
+pytest
